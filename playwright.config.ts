@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  reporter: 'html',
+  reporter: [['html'], ['github']],
   fullyParallel: true,
   workers: 3,
 
