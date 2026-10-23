@@ -14,7 +14,6 @@ export class AlertsFramesWindows {
         this.alertFramesWindowLink = page.getByRole('heading', { name: 'Alerts, Frame & Windows' });
         this.elementTabHeading = page.locator('.text-center');
 
-
     }
 
     getElementTab(element: string): Locator {

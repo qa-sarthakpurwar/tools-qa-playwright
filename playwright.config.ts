@@ -9,7 +9,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://demoqa.com/',
     trace: 'on-first-retry',
-    headless: false,
+    headless: true,
 
   },
 
@@ -19,20 +19,7 @@ export default defineConfig({
       name: 'chromium',
       use: {
         viewport: null,
-        launchOptions: {
-          args: ['--start-maximized'],
-        },
       },
-    },
-
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
     },
 
     /* Test against mobile viewports. */
