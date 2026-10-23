@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { AlertsFramesWindows } from '../../pages/alertsFramesWindows/alertsFramesWindows';
+import { AlertsFramesWindows } from '../../pages/alertsFramesWindows/AlertsFramesWindows';
 
 
 test('Browser Windows Validation', async ({ page }) => {
